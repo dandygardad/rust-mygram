@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS comments(
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER,
+    photo_id INTEGER,
+    message TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS socialmedia(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    social_media_url VARCHAR(255),
+    user_id INTEGER,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
