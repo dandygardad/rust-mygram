@@ -1,4 +1,6 @@
 mod models;
+mod schema;
+mod repositories;
 
 use axum::response::{Html, IntoResponse};
 use axum::{Json, Router};

@@ -9,7 +9,8 @@ chrono = { version = "0.4.39", features = ["serde"] }
 dotenv = "0.15.0"
 serde = { version = "1.0.217", features = ["derive"] }
 serde_json = "1.0.135"
-sqlx = { version = "0.8.3", features = ["postgres", "runtime-tokio-native-tls"] }
+sqlx = { version = "0.8.3", features = ["chrono", "postgres", "runtime-tokio-native-tls"] }
 sqlx-cli = "0.8.3"
 tokio = { version = "1.43.0", features = ["full"] }
 tower-http = { version = "0.6.2", features = ["fs"] }
+async-trait = "0.1.85"
