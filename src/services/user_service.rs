@@ -15,10 +15,14 @@ pub struct UserServiceImpl {
 
 impl UserService for UserServiceImpl {
     async fn register_user(&self, user: UserModel) -> Result<UserModel, Error> {
+        // Disini dilakukan business logic, dimana validasi, proses data dilakukan disini sebelum masuk DB
+        let register_user = &self.repository.insert_user(user);
         todo!()
     }
 
     async fn login_user(&self, user: UserModel) -> Result<UserModel, Error> {
+        // Disini dilakukan validasi, hasilkan JWT Token
+        let found_user = &self.repository.get_user(user);
         todo!()
     }
 }
