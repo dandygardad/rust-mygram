@@ -8,7 +8,7 @@ pub struct CommentModel {
     pub photo_id: i32,
     pub message: String,
     pub created_at: Option<chrono::DateTime<chrono::Utc>>,
-    pub deleted_at: Option<chrono::DateTime<chrono::Utc>>
+    pub updated_at: Option<chrono::DateTime<chrono::Utc>>
 }
 
 // For json response
@@ -19,5 +19,5 @@ pub struct CommentResponse {
     pub photo_id: i32,
     pub message: String,
     pub created_at: Option<chrono::DateTime<chrono::Utc>>,
-    pub deleted_at: Option<chrono::DateTime<chrono::Utc>>
+    pub updated_at: Option<chrono::DateTime<chrono::Utc>>
 }
